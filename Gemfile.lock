@@ -1,0 +1,42 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.0.5)
+    addressable (2.2.5)
+    diff-lcs (1.1.2)
+    fastercsv (1.5.4)
+    fathom (0.3.8)
+      fastercsv
+      sparql-algebra
+      uuid
+    git (1.2.5)
+    jeweler (1.6.0)
+      bundler (~> 1.0.0)
+      git (>= 1.2.5)
+      rake
+    macaddr (1.0.0)
+    rake (0.8.7)
+    rdf (0.3.0.pre)
+      addressable (>= 2.2)
+    rspec (2.5.0)
+      rspec-core (~> 2.5.0)
+      rspec-expectations (~> 2.5.0)
+      rspec-mocks (~> 2.5.0)
+    rspec-core (2.5.1)
+    rspec-expectations (2.5.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.5.0)
+    sparql-algebra (0.0.1)
+      rdf (= 0.3.0.pre)
+    uuid (2.3.2)
+      macaddr (~> 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport (= 3.0.5)
+  bundler (~> 1.0.0)
+  fathom (~> 0.3.8)
+  jeweler (~> 1.6.0)
+  rspec (~> 2.5.0)
