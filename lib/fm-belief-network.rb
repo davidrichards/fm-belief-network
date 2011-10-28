@@ -6,6 +6,7 @@ require File.expand_path('../../../fathom/lib/fathom', __FILE__)
 require 'rubygems'
 require 'sqlite3'
 
+require 'fathom'
 module Fathom
   class Config
 

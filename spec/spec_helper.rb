@@ -5,8 +5,12 @@ require 'fm-belief-network'
 # Short term:
 require File.expand_path('../../../fathom/spec/spec_helper', __FILE__)
 
-Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
+# Requires supporting ruby files in spec/support/ and its subdirectories.
+Dir[File.join(File.dirname(__FILE__), "support/**/*.rb")].each {|f| require f}
+Dir[File.join(File.dirname(__FILE__), "behavior/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
-  
+  # config.filter_run :focus => true
+  config.filter_run_excluding :slow => true
 end
+

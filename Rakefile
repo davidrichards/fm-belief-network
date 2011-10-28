@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "fm-belief-network"
   gem.homepage = "http://github.com/davidrichards/fm-belief-network"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Belief Networks for Fathom}
+  gem.description = %Q{An implementation of ideas from Judea Pearl and Daphne Koller for belief networks in the Fathom decision support framework.}
   gem.email = "davidlamontrichards@gmail.com"
   gem.authors = ["David Richards"]
   # dependencies defined in Gemfile
@@ -35,9 +35,6 @@ RSpec::Core::RakeTask.new(:rcov) do |spec|
   spec.pattern = 'spec/**/*_spec.rb'
   spec.rcov = true
 end
-
-require 'cucumber/rake/task'
-Cucumber::Rake::Task.new(:features)
 
 task :default => :spec
 
