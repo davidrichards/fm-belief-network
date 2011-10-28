@@ -1,6 +1,17 @@
 = fm-belief-network
 
-Description goes here.
+Belief Networks in Fathom.  This builds graphical models for inferring belief about our Fathom knowledge base.
+
+
+
+In the Koller and Friedman book, there are 63 algorithms defined.  This gives us a general idea of the scope of our project:
+
+* 63 Use cases in as many as 63 contexts
+* 20 - 50 Roles for implementing the steps and habits of these use cases
+* The same basic data structures from Fathom (Variable, Edge, Network with various annotations: Definition, CPD, possibly some others)
+
+On the other hand, belief propagation annotates the variables themselves, adding callback behavior from observations as well as storing the beliefs as a product of likelihoods and prior odds.
+
 
 == Contributing to fm-belief-network
  

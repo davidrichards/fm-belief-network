@@ -9,5 +9,8 @@ end
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
 require 'fm-belief-network'
+require '/usr/local/local_gems/fathom/lib/fathom'
 
 require 'rspec/expectations'
+
+include Fathom
