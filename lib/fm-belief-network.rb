@@ -46,6 +46,8 @@ end
 # = Data =
 # ========
 Fathom.autoload :CPT, path('data/cpt')
+Fathom::Variable
+require path('data/variable')
 
 # ============
 # = Contexts =
